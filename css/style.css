@@ -374,7 +374,7 @@ body {
   border-image: linear-gradient(135deg, #adf7bf 0, rgba(255,184,213,0.83) 25%, rgba(165,112,184,0.77) 33%, rgba(80,151,169,0.7) 63%, rgba(150,197,158,0.56) 84%, rgba(70,124,96,0.46) 99%, rgba(68,127,92,0.46) 100%) 1 1;
 }
 #sidebar .widget a {
-  color: #333;
+  color: #519bcc;
 }
 #sidebar .widget a:hover {
   color: #40759b;
@@ -382,7 +382,7 @@ body {
 }
 #sidebar .widget .widget-title,
 #sidebar .widget .comments-title {
-  color: #2d97b7;
+  color: #2695ab;
   line-height: 2.7;
   margin-top: 0;
   font-size: 16px;
@@ -393,7 +393,7 @@ body {
 }
 #sidebar .widget .widget-title i:before,
 #sidebar .widget .comments-title i:before {
-  color: #65b4cc;
+  color: #25aba2;
 }
 #sidebar .widget .tagcloud {
   margin-top: 10px;
@@ -446,7 +446,7 @@ body {
   content: '\f002';
   position: absolute;
   font-size: 14px;
-  left: 15px;
+  left: 10px;
   top: 12px;
   color: #3ab2ca;
 }
@@ -507,9 +507,12 @@ body {
 #search-result .tips {
   text-align: center;
 }
+#search-result .tips p {
+  color: #b9953b;
+}
 #search-result .tips .fa {
-  font-size: 60px;
-  color: #b3d2ef;
+  font-size: 30px;
+  color: #c5b88d;
 }
 #search-result .item {
   border-top: 1px solid #18657b;
@@ -1023,8 +1026,7 @@ body {
   padding-left: 0.15em;
 }
 .readmore a:hover {
-  -webkit-box-shadow: 0 -1px 4px #5483b1 inset;
-  box-shadow: 0 -1px 4px #5483b1 inset;
+  color: #337fe6;
 }
 /* post navigator*/
 .post-nav {
@@ -1141,8 +1143,6 @@ body {
   padding: 0;
   margin: 0;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 2px 3px #adc2d7;
-  box-shadow: 1px 2px 3px #adc2d7;
 }
 .author-page .author {
   font-size: 16px;
@@ -1150,9 +1150,13 @@ body {
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  padding-top: 30px;
 }
 .author-page .author .fa {
   margin-right: 0.4em;
+}
+.author-page .author .fa:before {
+  font-size: 18px;
 }
 .author-page .author .fa:before {
   margin-right: 0.2em;

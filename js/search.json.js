@@ -62,7 +62,7 @@
                 });
             }).join('');
         } else {
-            html = '<div class="tips"><i class="fa fa-empty"></i><p>Results not found!</p></div>';
+            html = '<div class="tips"><i class="fa fa-exclamation-circle"></i><p>没有找到相关信息!</p></div>';
         }
         searchResult.innerHTML = html;
     }
