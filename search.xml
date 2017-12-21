@@ -3,8 +3,70 @@
   
     
     <entry>
+      <title><![CDATA[七牛云存储可视化管理工具]]></title>
+      <url>/blog/2017/12/21/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%83%E7%89%9B%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</url>
+      <content type="html"><![CDATA[<p>QBox是一款方便的<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛</a>仓库以及文件管理工具，是一款可以跨平台运行在<code>OS X</code>，<code>Linux</code> 以及 <code>Windows</code> 系统的开源软件。QBox基于 <a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="noopener">electron-vue</a> 开发。</p>
+<p><a href="https://ci.appveyor.com/project/LanceGin/qbox" target="_blank" rel="noopener"><img src="https://ci.appveyor.com/api/projects/status/soh7mapv45levrxy?svg=true" alt="Build status"></a> <a href=""><img src="https://img.shields.io/github/downloads/lancegin/qbox/total.svg" alt="Github All Releases"></a> <a href=""><img src="https://img.shields.io/itunes/v/1267204866.svg" alt="Itunes App Store"></a></p>
+<h2 id="软件截图"><a href="#软件截图" class="headerlink" title="软件截图"></a>软件截图</h2><h4 id="仓库面板"><a href="#仓库面板" class="headerlink" title="仓库面板"></a>仓库面板</h4><p><img src="http://otwcctfiu.bkt.clouddn.com/bucket-panel.png" alt="bucket panel"></p>
+<h4 id="文件管理面板"><a href="#文件管理面板" class="headerlink" title="文件管理面板"></a>文件管理面板</h4><p><img src="http://otwcctfiu.bkt.clouddn.com/manage-panel.png" alt="bucket panel"></p>
+<h4 id="上传文件面板"><a href="#上传文件面板" class="headerlink" title="上传文件面板"></a>上传文件面板</h4><p><img src="http://otwcctfiu.bkt.clouddn.com/upload-panel.png" alt="bucket panel"></p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><h4 id="仓库面板-1"><a href="#仓库面板-1" class="headerlink" title="仓库面板"></a>仓库面板</h4><ul>
+<li style="list-style: none"><input type="checkbox" checked> 通过本地设置 <code>accessKey</code> 和 <code>secretKey</code>获取管理权限。</li>
+<li style="list-style: none"><input type="checkbox" checked> 可清除本地token（包括 <code>accessKey</code> 和 <code>secretKey</code>）从而退出。</li>
+<li style="list-style: none"><input type="checkbox" checked> 获取所有的仓库（包含私有仓库）。</li>
+<li style="list-style: none"><input type="checkbox" checked> 新建一个专门的 <code>管理面板</code> 进行文件管理。</li>
+</ul>
+<h4 id="管理面板"><a href="#管理面板" class="headerlink" title="管理面板"></a>管理面板</h4><ul>
+<li style="list-style: none"><input type="checkbox" checked> 列出仓库中的所有文件。</li>
+<li style="list-style: none"><input type="checkbox" checked> 分页显示仓库中的文件，每次加载100条。</li>
+<li style="list-style: none"><input type="checkbox" checked> 可通过 <code>文件名</code>，<code>文件类型</code>，<code>文件大小</code> 或者 <code>修改时间</code> 进行排序。</li>
+<li style="list-style: none"><input type="checkbox" checked> <code>图片</code> 以及 <code>多媒体文件</code> 预览功能。</li>
+<li style="list-style: none"><input type="checkbox" checked> 删除单个文件。</li>
+<li style="list-style: none"><input type="checkbox" checked> 批量删除文件。</li>
+<li style="list-style: none"><input type="checkbox" checked> 复制文件外链。</li>
+<li style="list-style: none"><input type="checkbox" checked> 刷新文件列表。</li>
+<li style="list-style: none"><input type="checkbox" checked> 下载单个文件。</li>
+<li style="list-style: none"><input type="checkbox" checked> 上传文件（支持拖拽）。</li>
+<li style="list-style: none"><input type="checkbox" checked> 文件名前缀搜索。</li>
+</ul>
+<h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><h4 id="导航栏"><a href="#导航栏" class="headerlink" title="导航栏"></a>导航栏</h4><ul>
+<li style="list-style: none"><input type="checkbox" checked> 设置默认仓库。</li>
+<li style="list-style: none"><input type="checkbox" checked> 拖动至导航栏图标进行上传。</li>
+</ul>
+<h4 id="仓库面板-2"><a href="#仓库面板-2" class="headerlink" title="仓库面板"></a>仓库面板</h4><ul>
+<li style="list-style: none"><input type="checkbox" checked> 删除仓库。</li>
+<li style="list-style: none"><input type="checkbox" checked> 创建仓库。</li>
+</ul>
+<h4 id="管理面板-1"><a href="#管理面板-1" class="headerlink" title="管理面板"></a>管理面板</h4><ul>
+<li style="list-style: none"><input type="checkbox" checked> 搜索框提供回车响应。</li>
+<li style="list-style: none"><input type="checkbox"> 批量上传文件。</li>
+<li style="list-style: none"><input type="checkbox" checked> 批量下载文件。</li>
+<li style="list-style: none"><input type="checkbox" checked> 重命名文件。</li>
+</ul>
+<h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p><a href=""><img src="https://img.shields.io/github/license/lancegin/qbox.svg" alt="license"></a></p>
+<h2 id="代码贡献"><a href="#代码贡献" class="headerlink" title="代码贡献"></a>代码贡献</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地开放版本测试</span></span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 编译线上版本</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单元测试（目前暂无）</span></span><br><span class="line">npm <span class="built_in">test</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查代码规范</span></span><br><span class="line">npm run lint</span><br></pre></td></tr></table></figure>
+<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a><a href="https://github.com/LanceGin/QBox/blob/master/README.md" target="_blank" rel="noopener">Document</a></h2>]]></content>
+      
+        <categories>
+            
+            <category> 工具教程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 七牛云存储 </tag>
+            
+            <tag> 管理工具 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[最全的前端知识体系资源教程]]></title>
-      <url>/blog/2017/12/21/%E8%B5%84%E6%96%99%E6%95%99%E7%A8%8B/%E6%9C%80%E5%85%A8%E7%9A%84%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/</url>
+      <url>/blog/2017/12/21/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/%E6%9C%80%E5%85%A8%E7%9A%84%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p>众所周知，前端发展如火如荼，日新月异，而且很长一段时间内都将如此。这份由<a href="https://jeffjade.com" target="_blank" rel="noopener">晚晴幽草轩轩主</a>正在维护的教程列表；旨在为<code>前端学习</code>，<code>技能提升</code>，<code>视野扩展</code>，<code>资料查找</code>等行个方便。将会在日常工作探索、学习中，持续保持更新，增新优之章，除旧失之文；尽可能使得这份列表保持简练，以避免信息过重且冗杂；望其能在浩如烟海的讯息中，堪有所用。详细说明，可参见：<a href="https://www.jeffjade.com/2017/09/28/127-nice-front-end-tutorial/" target="_blank" rel="noopener">与时俱进版前端资源教程</a>。</p>
 <ul>
 <li><a href="https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/front-end-tutorial.md" target="_blank" rel="noopener"><strong>大前端综合</strong></a></li>
@@ -3746,7 +3808,7 @@
       
         <categories>
             
-            <category> 资料教程 </category>
+            <category> 教程资料 </category>
             
         </categories>
         
@@ -3760,8 +3822,8 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/blog/2017/12/18/hello-world/</url>
+      <title><![CDATA[Hexo博客框架基本使用]]></title>
+      <url>/blog/2017/12/21/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -3773,6 +3835,22 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
       
+        <categories>
+            
+            <category> 工具教程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 框架 </tag>
+            
+            <tag> 文档工具 </tag>
+            
+        </tags>
         
     </entry>
     
@@ -3780,6 +3858,13 @@
       <title><![CDATA[清除css样式浮动]]></title>
       <url>/blog/2017/12/18/css%E6%A0%B7%E5%BC%8F%E6%8A%80%E5%B7%A7/%E6%B8%85%E9%99%A4css%E6%A0%B7%E5%BC%8F%E6%B5%AE%E5%8A%A8/</url>
       <content type="html"><![CDATA[<p>在开发网页的时候经常需要用到各种浮动，此时便需要及时的清除浮动，否则将会导致布局出现问题</p>
+<h2 id="在清除浮动两个重要的定义"><a href="#在清除浮动两个重要的定义" class="headerlink" title="在清除浮动两个重要的定义"></a>在清除浮动两个重要的定义</h2><h3 id="浮动的定义"><a href="#浮动的定义" class="headerlink" title="浮动的定义"></a>浮动的定义</h3><blockquote>
+<p>使元素脱离文档流，按照指定方向发生移动，遇到父级边界或者相邻的浮动元素停了下来。</p>
+</blockquote>
+<h3 id="高度塌陷"><a href="#高度塌陷" class="headerlink" title="高度塌陷"></a>高度塌陷</h3><blockquote>
+<p>浮动元素父元素高度自适应（父元素不写高度时，子元素写了浮动后，父元素会发生高度塌陷）</p>
+</blockquote>
+<p>知道浮动和为什么要清除浮动之后我们可以开始学习如何清除浮动了，这时候我们就需要用到清除浮动的属性clear<br>clear:left | right | both | none | inherit：元素的某个方向上不能有浮动元素<br>clear:both：在左右两侧均不允许浮动元素。</p>
 <ul>
 <li>额外标签法</li>
 <li>使用:after 伪元素</li>
@@ -3788,7 +3873,14 @@
 <li>父元素浮动</li>
 <li>父元素处于绝对定位</li>
 </ul>
-<h2 id="引出问题："><a href="#引出问题：" class="headerlink" title="引出问题："></a>引出问题：</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .outer&#123;</span></span><br><span class="line"><span class="undefined">            border: 1px solid black;</span></span><br><span class="line"><span class="undefined">            width:300px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .inner&#123;</span></span><br><span class="line"><span class="undefined">            width: 50px;</span></span><br><span class="line"><span class="undefined">            height: 50px;</span></span><br><span class="line"><span class="undefined">            background-color: #ff4400;</span></span><br><span class="line"><span class="undefined">            margin-right: 20px;</span></span><br><span class="line"><span class="undefined">            float: left;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .footer&#123;</span></span><br><span class="line"><span class="undefined">            background-color: #005FC3;</span></span><br><span class="line"><span class="undefined">            width: 200px;</span></span><br><span class="line"><span class="undefined">            height: 100px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="清除浮动的几种方法"><a href="#清除浮动的几种方法" class="headerlink" title="清除浮动的几种方法"></a>清除浮动的几种方法</h2><h3 id="一、在浮动元素下方添加空div-并给该元素写css样式"><a href="#一、在浮动元素下方添加空div-并给该元素写css样式" class="headerlink" title="一、在浮动元素下方添加空div,并给该元素写css样式"></a>一、在浮动元素下方添加空div,并给该元素写css样式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;clear:both;height:0;overflow:hidden;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="二、给浮动元素父级设置高度"><a href="#二、给浮动元素父级设置高度" class="headerlink" title="二、给浮动元素父级设置高度"></a>二、给浮动元素父级设置高度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我们知道了高度塌陷是应为给浮动元素的父级高度是自适应导致的，那么我们给它的设置适当的高度就可以解决这个问题了。</span><br><span class="line">缺点：在浮动元素高度不确定的时候不适用</span><br></pre></td></tr></table></figure>
+<h3 id="三、以浮制浮（父级同时浮动）"><a href="#三、以浮制浮（父级同时浮动）" class="headerlink" title="三、以浮制浮（父级同时浮动）"></a>三、以浮制浮（父级同时浮动）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">何谓“以浮制浮”呢？就是**让浮动元素的父级也浮动**。</span><br><span class="line">缺点：需要给每个浮动元素父级添加浮动，浮动多了容易出现问题。</span><br></pre></td></tr></table></figure>
+<h3 id="四、父级设置成inline-block"><a href="#四、父级设置成inline-block" class="headerlink" title="四、父级设置成inline-block"></a>四、父级设置成inline-block</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">缺点：父级的margin左右auto失效，无法使用margin: 0 auto;居中了</span><br></pre></td></tr></table></figure>
+<h3 id="五、br-清浮动"><a href="#五、br-清浮动" class="headerlink" title="五、br 清浮动"></a>五、br 清浮动</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span> <span class="attr">clear</span>=<span class="string">"both"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"> br 标签自带clear属性，将它设置成both其实和添加空div原理是一样的。</span></span><br><span class="line"><span class="comment"> 问题：不符合工作中：结构、样式、行为，三者分离的要求。</span></span><br><span class="line"><span class="comment"> --&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="六、给父级添加overflow-hidden-清浮动方法"><a href="#六、给父级添加overflow-hidden-清浮动方法" class="headerlink" title="六、给父级添加overflow:hidden 清浮动方法"></a>六、给父级添加overflow:hidden 清浮动方法</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">overflow: hidden;</span><br><span class="line">*zoom: 1;</span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"> 问题：需要配合 宽度 或者 zoom 兼容IE6 IE7</span></span><br><span class="line"><span class="comment"> --&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="七、万能清除法-after伪类-清浮动（现在主流方法，推荐使用）"><a href="#七、万能清除法-after伪类-清浮动（现在主流方法，推荐使用）" class="headerlink" title="七、万能清除法 after伪类 清浮动（现在主流方法，推荐使用）"></a>七、万能清除法 after伪类 清浮动（现在主流方法，推荐使用）</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">    <span class="attribute">display</span>:block;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">overflow</span>:hidden;</span><br><span class="line">    <span class="attribute">visibility</span>:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>

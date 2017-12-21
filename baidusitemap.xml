@@ -4,44 +4,8 @@
 
     
   <url>
-    <loc>https://xiyuan-code.github.io/blog/blog/2017/12/21/%E8%B5%84%E6%96%99%E6%95%99%E7%A8%8B/%E6%9C%80%E5%85%A8%E7%9A%84%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2017-12-21T08:23:09.664Z</lastmod>
-    <data>
-        <display>
-        <title>最全的前端知识体系资源教程</title>
-        <pubTime>2017-12-21T08:23:09.664Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="资料教程" url="https://xiyuan-code.github.io/blog/blog/categories/%E8%B5%84%E6%96%99%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://xiyuan-code.github.io/blog/blog/2017/12/18/hello-world/</loc>
-    <lastmod>2017-12-18T13:06:59.220Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-12-18T13:06:59.220Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://xiyuan-code.github.io/blog/blog/2017/12/18/css%E6%A0%B7%E5%BC%8F%E6%8A%80%E5%B7%A7/%E6%B8%85%E9%99%A4css%E6%A0%B7%E5%BC%8F%E6%B5%AE%E5%8A%A8/</loc>
-    <lastmod>2017-12-18T09:15:15.320Z</lastmod>
+    <lastmod>2017-12-21T12:36:35.645Z</lastmod>
     <data>
         <display>
         <title>清除css样式浮动</title>
@@ -58,5 +22,72 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://xiyuan-code.github.io/blog/blog/2017/12/21/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%83%E7%89%9B%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2017-12-21T10:42:03.963Z</lastmod>
+    <data>
+        <display>
+        <title>七牛云存储可视化管理工具</title>
+        <pubTime>2017-12-21T10:42:03.963Z</pubTime>
+        
+        <tag>七牛云存储</tag>
+         
+        <tag>管理工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具教程" url="https://xiyuan-code.github.io/blog/blog/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiyuan-code.github.io/blog/blog/2017/12/21/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/%E6%9C%80%E5%85%A8%E7%9A%84%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2017-12-21T10:10:12.802Z</lastmod>
+    <data>
+        <display>
+        <title>最全的前端知识体系资源教程</title>
+        <pubTime>2017-12-21T10:10:12.802Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="教程资料" url="https://xiyuan-code.github.io/blog/blog/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiyuan-code.github.io/blog/blog/2017/12/21/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2017-12-21T10:08:48.504Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo博客框架基本使用</title>
+        <pubTime>2017-12-21T10:08:48.504Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>框架</tag>
+         
+        <tag>文档工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具教程" url="https://xiyuan-code.github.io/blog/blog/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
 </urlset>

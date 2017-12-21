@@ -686,11 +686,11 @@ body {
   word-break: normal;
 }
 .post .post-content h2 {
-  color: #13a097;
+  color: #117136;
   font-size: 18px;
 }
 .post .post-content h3 {
-  color: #18bd57;
+  color: #13a097;
   font-size: 16px;
 }
 .post .post-content h4 {
@@ -709,14 +709,16 @@ body {
   margin: 0 5px;
   padding: 0 5px;
   font-family: Source Code Pro, Monaco, Menlo, Consolas, monospace;
-  background: #eee;
+  background: #e4e4e4;
   color: #108843;
+  border-radius: 3px;
   font-size: 0.95em;
 }
 .post .post-content p a {
   color: #40759b;
   padding-bottom: 2px;
   word-break: break-all;
+  display: inline-block;
 }
 .post .post-content p a:hover {
   text-decoration: underline;
@@ -1444,15 +1446,19 @@ table td {
   margin: 10px;
   display: block;
   overflow-x: auto;
-  padding: 10px 0 0 10px;
-  color: #2c80a0;
+  color: #9a9305;
   background: #fbfbfb;
+}
+.highlight table {
+  margin: 0;
 }
 .highlight table td {
   border: none;
 }
 .highlight .gutter {
   border-right: dashed 1px #e4e2db;
+  background-color: #f5f5f5;
+  padding: 0 10px 0 15px;
 }
 .highlight .gutter .line {
   color: #879294;
