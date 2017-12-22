@@ -1298,8 +1298,6 @@ table td {
   #search-form input {
     color: #fff;
     background: transparent;
-    border: 1px solid #e2eaf1;
-    border-image: linear-gradient(135deg, #adf7bf 0, rgba(255,184,213,0.83) 25%, rgba(165,112,184,0.77) 33%, rgba(80,151,169,0.7) 63%, rgba(150,197,158,0.56) 84%, rgba(70,124,96,0.46) 99%, rgba(68,127,92,0.46) 100%) 1 1;
   }
   #search-form input:-ms-input-placeholder {
     color: #fff;
@@ -1425,6 +1423,8 @@ table td {
   }
   .post-archive {
     padding: 0;
+    padding-top: 50px;
+    padding-left: 50px;
   }
   .archive-wrap {
     margin-left: 56px;
