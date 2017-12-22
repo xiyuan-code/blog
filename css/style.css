@@ -1258,11 +1258,21 @@ table td {
   padding: 5px 10px;
   border: 1px solid #d8e2eb;
 }
-@media print, screen and (max-width: 56.25em) {
+@media print, screen and (max-width: 1200px) {
   .body_container {
     padding: 0 30px;
-    max-width: 1200px;
+    max-width: 100%;
   }
+  #nav-menu {
+    max-width: 100%;
+  }
+  #bg-canvas,
+  #bg-canvas-image {
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media print, screen and (max-width: 56.25em) {
   .content_container {
     padding-right: 20px;
   }
