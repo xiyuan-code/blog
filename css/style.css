@@ -1261,6 +1261,7 @@ table td {
 @media print, screen and (max-width: 56.25em) {
   .body_container {
     padding: 0 30px;
+    max-width: 1200px;
   }
   .content_container {
     padding-right: 20px;
@@ -1315,6 +1316,7 @@ table td {
   #nav-menu {
     position: relative;
     text-align: center;
+    max-width: 1000px;
   }
   #nav-menu a {
     padding: 0 15px;
@@ -1323,7 +1325,6 @@ table td {
     font-size: 13px;
   }
   .site-name {
-    margin-bottom: 20px;
     text-align: center;
   }
   .content_container {
@@ -1331,6 +1332,7 @@ table td {
   }
   .body_container {
     padding: 0 20px;
+    max-width: 1000px;
   }
   .post {
     padding: 15px;
@@ -1366,11 +1368,24 @@ table td {
 }
 /* small*/
 @media print, screen and (max-width: 35.5em) {
+  #bg-canvas,
+  #bg-canvas-image {
+    background-size: cover;
+    background-position: center;
+  }
+  #header .site-name {
+    padding-top: 50px;
+  }
+  #nav-menu {
+    max-width: 100%;
+    flex-flow: column wrap-reverse;
+  }
   .content_container {
     padding-right: 0;
   }
   .body_container {
     padding: 0 20px;
+    max-width: 100%;
   }
   .post-archive {
     padding: 0.6em 0;
@@ -1396,6 +1411,9 @@ table td {
   }
 }
 @media print, screen and (max-width: 25em) {
+  #nav-menu {
+    max-width: 100%;
+  }
   #nav-menu a {
     padding: 0 10px 0 8px;
   }
