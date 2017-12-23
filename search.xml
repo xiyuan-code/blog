@@ -3,6 +3,88 @@
   
     
     <entry>
+      <title><![CDATA[按名称查找某个进程，并停止]]></title>
+      <url>/blog/2017/12/23/%E6%9C%8D%E5%8A%A1%E8%BF%90%E7%BB%B4/%E6%8C%89%E5%90%8D%E7%A7%B0%E6%9F%A5%E6%89%BE%E6%9F%90%E4%B8%AA%E8%BF%9B%E7%A8%8B%EF%BC%8C%E5%B9%B6%E5%81%9C%E6%AD%A2/</url>
+      <content type="html"><![CDATA[<p>此篇笔记记录在linux中如何按名称查找某个进程并停止，这里备忘一下。</p>
+<h3 id="示例脚本"><a href="#示例脚本" class="headerlink" title="示例脚本"></a>示例脚本</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/sh</span></span><br><span class="line"></span><br><span class="line">ID=`ps -ef| grep <span class="string">'TcpServer.sh'</span>|grep -v <span class="string">'grep'</span>|awk <span class="string">'&#123;print $2&#125;'</span>`</span><br><span class="line"><span class="keyword">for</span> pid <span class="keyword">in</span> <span class="variable">$ID</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    <span class="built_in">kill</span> -9 <span class="variable">$pid</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">" kill TcpServer.sh pid:<span class="variable">$pid</span>"</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> 服务运维 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> shell命令 </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Golang 在 Mac、Linux、Windows 下交叉编译]]></title>
+      <url>/blog/2017/12/23/golang%E7%BC%96%E7%A8%8B/Golang%20%E5%9C%A8%20Mac%E3%80%81Linux%E3%80%81Windows%20%E4%B8%8B%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</url>
+      <content type="html"><![CDATA[<p>Golang 支持交叉编译，在一个平台上生成另一个平台的可执行程序，最近使用了一下，非常好用，这里备忘一下。</p>
+<h3 id="示例命令"><a href="#示例命令" class="headerlink" title="示例命令"></a>示例命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令： GOOS=linux GOARCH=amd64 go build main.go</span><br></pre></td></tr></table></figure>
+<h3 id="Mac-下编译-Linux-和-Windows-64位可执行程序"><a href="#Mac-下编译-Linux-和-Windows-64位可执行程序" class="headerlink" title="Mac 下编译 Linux 和 Windows 64位可执行程序"></a>Mac 下编译 Linux 和 Windows 64位可执行程序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build main.go</span><br><span class="line">CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go</span><br></pre></td></tr></table></figure>
+<h3 id="Linux-下编译-Mac-和-Windows-64位可执行程序"><a href="#Linux-下编译-Mac-和-Windows-64位可执行程序" class="headerlink" title="Linux 下编译 Mac 和 Windows 64位可执行程序"></a>Linux 下编译 Mac 和 Windows 64位可执行程序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build main.go</span><br><span class="line">CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go</span><br></pre></td></tr></table></figure>
+<h3 id="Windows-下编译-Mac-和-Linux-64位可执行程序"><a href="#Windows-下编译-Mac-和-Linux-64位可执行程序" class="headerlink" title="Windows 下编译 Mac 和 Linux 64位可执行程序"></a>Windows 下编译 Mac 和 Linux 64位可执行程序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">SET CGO_ENABLED=0</span><br><span class="line">SET GOOS=darwin</span><br><span class="line">SET GOARCH=amd64</span><br><span class="line">go build main.go</span><br><span class="line"></span><br><span class="line">SET CGO_ENABLED=0</span><br><span class="line">SET GOOS=linux</span><br><span class="line">SET GOARCH=amd64</span><br><span class="line">go build main.go</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>GOOS</strong>：目标平台的操作系统（darwin、freebsd、linux、windows）</p>
+<p><strong>GOARCH</strong>：目标平台的体系架构（386、amd64、arm）</p>
+</blockquote>
+<p>交叉编译不支持 CGO 所以要禁用它<br>上面的命令编译 64 位可执行程序，你当然应该也会使用 386 编译 32 位可执行程序</p>
+<p>很多博客都提到要先增加对其它平台的支持，但是我跳过那一步，上面所列的命令也都能成功，且得到我想要的结果，可见那一步应该是非必须的，或是我所使用的 Go 版本已默认支持所有平台。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> golang编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 打包 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[docker 中安装php环境]]></title>
+      <url>/blog/2017/12/23/%E6%9C%8D%E5%8A%A1%E8%BF%90%E7%BB%B4/docker%20%E4%B8%AD%E5%AE%89%E8%A3%85php%E7%8E%AF%E5%A2%83/</url>
+      <content type="html"><![CDATA[<p>此篇笔记记录如何利用docker容器 来安装php环境，和在容器中安装php对应的扩展程序及配置。</p>
+<h3 id="镜像命令"><a href="#镜像命令" class="headerlink" title="镜像命令"></a>镜像命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull php:7.2.0RC4-fpm-alpine3.6</span><br></pre></td></tr></table></figure>
+<h3 id="容器创建命令"><a href="#容器创建命令" class="headerlink" title="容器创建命令"></a>容器创建命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run  --name=php-fpm --restart=always -v ~/docker/nginx/wwwroot:/usr/share/nginx  -v ~/docker/php:/usr/<span class="built_in">local</span>/etc/php/conf.d --link mysql:mysql  -p 127.0.0.1:9000:9000  -d php:7.2.0RC4-fpm-alpine3.6</span><br></pre></td></tr></table></figure>
+<h3 id="进入php-fpm容器"><a href="#进入php-fpm容器" class="headerlink" title="进入php-fpm容器"></a>进入php-fpm容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Docker <span class="built_in">exec</span> -it php-fpm sh</span><br></pre></td></tr></table></figure>
+<h3 id="更换更换软件源的方法："><a href="#更换更换软件源的方法：" class="headerlink" title="更换更换软件源的方法："></a>更换更换软件源的方法：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">编辑/etc/apk/repositories  然后在文件的最顶端添加(注意将3.3换成需要的版本)</span><br><span class="line">http://mirrors.aliyun.com/alpine/v3.3/main/</span><br></pre></td></tr></table></figure>
+<h3 id="安装php扩展"><a href="#安装php扩展" class="headerlink" title="安装php扩展"></a>安装php扩展</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker-php-ext-install mysqli</span><br><span class="line">docker-php-ext-install gd &amp;&amp; docker-php-ext-install pdo_mysql</span><br></pre></td></tr></table></figure>
+<h3 id="reais扩展"><a href="#reais扩展" class="headerlink" title="reais扩展"></a>reais扩展</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pecl install /home/redis.tgz &amp;&amp; <span class="built_in">echo</span> <span class="string">"extension=redis.so"</span> &gt; /usr/<span class="built_in">local</span>/etc/php/conf.d/redis.ini</span><br></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> 服务运维 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[七牛云存储可视化管理工具]]></title>
       <url>/blog/2017/12/21/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%83%E7%89%9B%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</url>
       <content type="html"><![CDATA[<p>QBox是一款方便的<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛</a>仓库以及文件管理工具，是一款可以跨平台运行在<code>OS X</code>，<code>Linux</code> 以及 <code>Windows</code> 系统的开源软件。QBox基于 <a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="noopener">electron-vue</a> 开发。</p>
