@@ -34,7 +34,6 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  overflow: hidden;
 }
 s,
 i,
@@ -84,12 +83,29 @@ a:active {
 }
 blockquote,
 .stressed {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
-  color: #555;
-  border: 1px solid #e6e6e6;
-  border-left: 5px solid #06b11c;
+  padding: 12px 24px 12px 30px;
+  margin: 2em 0;
+  color: #966516;
+  background-color: #f8f8f8;
+  position: relative;
+  border-left: solid 4px #ffc966;
+}
+blockquote:before,
+.stressed:before {
+  content: "!";
+  background-color: #ffc966;
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
 }
 strong,
 b,
@@ -404,6 +420,33 @@ body {
   line-height: 1.5;
   padding: 5px;
 }
+#sidebar .widget .tagcloud a:nth-child(9n) {
+  color: #4a4a4a;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+1) {
+  color: #15a287;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+2) {
+  color: #5cb85c;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+3) {
+  color: #d9534f;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+4) {
+  color: #567e95;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+5) {
+  color: #b433ff;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+6) {
+  color: #00a67c;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+7) {
+  color: #b37333;
+}
+#sidebar .widget .tagcloud a:nth-child(9n+8) {
+  color: #f60;
+}
 #sidebar .widget ul,
 #sidebar .widget ol {
   list-style: none;
@@ -687,12 +730,36 @@ body {
   word-break: normal;
 }
 .post .post-content h2 {
-  color: #117136;
+  position: relative;
+  z-index: 1;
+  padding: 10px 0;
+}
+.post .post-content h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 130px;
+  height: 100%;
+  z-index: -1;
+  display: block;
+}
+.post .post-content h2 {
+  margin: 1rem 0;
+  color: #29864c;
   font-size: 18px;
+  background-color: #def1f1;
+}
+.post .post-content h2:before {
+  background-color: #def1f1;
+  border-left: solid 5px #168640;
+  left: -30px;
 }
 .post .post-content h3 {
   color: #13a097;
   font-size: 16px;
+  padding: 7px 10px;
+  font-weight: 600;
+  border-bottom: dashed 1px #37aba3;
 }
 .post .post-content h4 {
   font-size: 14px;
