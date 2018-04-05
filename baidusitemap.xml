@@ -4,6 +4,70 @@
 
     
   <url>
+    <loc>https://xiyuan-code.github.io/blog/blog/2017/12/23/%E6%9C%8D%E5%8A%A1%E8%BF%90%E7%BB%B4/nginx%E9%85%8D%E7%BD%AEhttps/</loc>
+    <lastmod>2018-02-22T07:46:27.646Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 配置 HTTPS 服务器</title>
+        <pubTime>2017-12-23T07:37:27.048Z</pubTime>
+        
+        <tag>https</tag>
+         
+        <tag>ssl</tag>
+         
+        <tag>nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务运维" url="https://xiyuan-code.github.io/blog/blog/categories/%E6%9C%8D%E5%8A%A1%E8%BF%90%E7%BB%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiyuan-code.github.io/blog/blog/2018/01/21/web%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/node-webkit/nw%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2018-01-28T06:44:08.552Z</lastmod>
+    <data>
+        <display>
+        <title>nw快速入门</title>
+        <pubTime>2018-01-21T10:41:12.000Z</pubTime>
+        
+        <tag>node-webkit</tag>
+         
+         
+           
+             
+              <breadCrumb title="web前端技巧" url="https://xiyuan-code.github.io/blog/blog/categories/web%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiyuan-code.github.io/blog/blog/2018/01/21/web%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/javascript/javascript%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%AE%BD%E9%AB%98%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2018-01-21T04:17:04.266Z</lastmod>
+    <data>
+        <display>
+        <title>javascript获取图片宽高的方法</title>
+        <pubTime>2018-01-21T03:49:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="web前端技巧" url="https://xiyuan-code.github.io/blog/blog/categories/web%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://xiyuan-code.github.io/blog/blog/2017/12/24/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%E8%AF%A6%E8%A7%A3/</loc>
     <lastmod>2017-12-24T08:26:24.239Z</lastmod>
     <data>
