@@ -21,7 +21,7 @@
     function loadData(success) {
         if (!searchData) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', '/content.json', true);
+            xhr.open('GET', window.location.protocol+'//'+window.location.host+'/blog/content.json', true);
             xhr.onload = function() {
                 if (this.status >= 200 && this.status < 300) {
                     var res = JSON.parse(this.response||this.responseText);
@@ -62,7 +62,7 @@
                 });
             }).join('');
         } else {
-            html = '<div class="tips"><i class="fa fa-empty"></i><p>Results not found!</p></div>';
+            html = '<div class="tips"><i class="fa fa-exclamation-circle"></i><p>没有找到相关信息!</p></div>';
         }
         searchResult.innerHTML = html;
     }
