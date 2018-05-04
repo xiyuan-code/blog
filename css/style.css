@@ -3,9 +3,6 @@ body,
 dl,
 dt,
 dd,
-ul,
-ol,
-li,
 h1,
 h2,
 h3,
@@ -821,10 +818,6 @@ body {
   margin: 0;
   padding: 0 0 0 2em;
 }
-.post .post-content ul li,
-.post .post-content ol li {
-  list-style: disc;
-}
 .post .post-content ul code,
 .post .post-content ol code {
   margin: 0 5px;
@@ -1371,8 +1364,9 @@ table td {
 .highlight .keyword,
 .highlight .selector-tag,
 .highlight .subst {
-  color: #333;
+  color: #4c8002;
   font-weight: bold;
+  font-style: italic;
 }
 .highlight .number,
 .highlight .literal,
