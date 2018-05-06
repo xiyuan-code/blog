@@ -1076,6 +1076,8 @@ body {
   padding: 5px 5px;
 }
 .page-navigator .current {
+  color: #d44db7;
+  font-weight: 800;
   background: #fff;
 }
 .page-navigator .current:hover {
@@ -1088,6 +1090,7 @@ body {
 }
 .page-navigator a,
 .page-navigator span {
+  color: #187ec7;
   display: inline-block;
   height: 25px;
   line-height: 25px;
@@ -1095,10 +1098,10 @@ body {
   text-align: center;
   -webkit-box-shadow: 1px 2px 3px #adc2d7;
   box-shadow: 1px 2px 3px #adc2d7;
-  border: 1px solid #adc2d7;
 }
 .page-navigator a:hover,
 .page-navigator span:hover {
+  color: #981dc5;
   border-bottom-color: #fff;
 }
 .page-navigator a.prev:before,
@@ -1123,11 +1126,11 @@ body {
 .label-title .fa {
   display: inline-block;
   background: #c0e6ef;
-  color: #d43f3f;
+  color: #1591a9;
   padding: 3px 10px;
   border-radius: 30px 0 0 30px;
   margin: 0 5px;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* read more*/
 .readmore a {
