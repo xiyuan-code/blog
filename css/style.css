@@ -281,6 +281,7 @@ body {
   background-color: #13404e;
   background-color: #185f7f;
   background-size: contain;
+  background-position: top center;
   background-repeat: no-repeat;
   background-image: url("../img/title-h.jpg");
 }
