@@ -107,6 +107,7 @@ blockquote:before,
 strong,
 b,
 em {
+  color: #2795ca;
   font-weight: bold;
 }
 .hidden1 {
@@ -721,7 +722,7 @@ body {
 }
 .post .post-content {
   clear: left;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.77;
   color: #37373a;
   padding-top: 15px;
